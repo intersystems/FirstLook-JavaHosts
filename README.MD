@@ -1,12 +1,12 @@
 Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
 
-This sample works with InterSystems IRIS Data Platform (tm) 2018.1.1.
+This sample can be used with InterSystems IRIS Data Platform (tm) 2018.1.1.
 
-Download this sample to your system. 
+Download this sample to your system. You can either use the jar files provided in the 2018.1.1 release zip archive or build the jar files using the instructions in this README.
 
-You can find instructions on setting up the production for this sample in: <a href="http://docs.intersystems.com/iris201811/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_javabusinesshosts">First Look: Connecting Systems in InterSystems IRIS Using Java Business Hosts</a>.
+Once you have the jar files, see <a href="http://docs.intersystems.com/iris201811/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_javabusinesshosts">First Look: Connecting Systems in InterSystems IRIS Using Java Business Hosts</a> for instructions on setting up the production for this sample.
    
-The jar files in the repository Releases were created using the following jdk commands:
+To create the jar files, enter the following commands. On UNIX(R) systems, enter the equivalent commands.
 
 mkdir JavaHostsOperationOut
 
@@ -24,5 +24,5 @@ cd ..\JavaHostsServiceOut
 
 jar cf ..\Releases\JavaHostsService.jar JavaHosts
 
-You should modify the classpath to reflect the directory where InterSystems IRIS is installed.
+You should modify the classpath to reflect the directory where InterSystems IRIS(tm) is installed.
    

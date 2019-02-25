@@ -1,28 +1,1 @@
-Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
-
-This sample can be used with InterSystems IRIS Data Platform (tm) 2018.1.1.
-
-Download this sample to your system. You can either use the jar files provided in the 2018.1.1 release zip archive or build the jar files using the instructions in this README.
-
-Once you have the jar files, see <a href="http://docs.intersystems.com/iris201811/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_javabusinesshosts">First Look: Connecting Systems in InterSystems IRIS Using Java Business Hosts</a> for instructions on setting up the production for this sample.
-   
-To create the jar files, enter the following commands. On UNIX(R) systems, enter the equivalent commands.
-
-mkdir JavaHostsOperationOut
-
-mkdir JavaHostsServiceOut
-
-javac -classpath C:\InterSystems\IRIS\dev\java\lib\JDK18\intersystems-gateway-3.0.0.jar -d JavaHostsOperationOut src\JavaHosts\JavaHostsOperation.java
-
-javac -classpath C:\InterSystems\IRIS\dev\java\lib\JDK18\intersystems-gateway-3.0.0.jar -d JavaHostsServiceOut src\JavaHosts\JavaHostsService.java
-
-cd JavaHostsOperationOut
-
-jar cf ..\Releases\JavaHostsOperation.jar JavaHosts
-
-cd ..\JavaHostsServiceOut
-
-jar cf ..\Releases\JavaHostsService.jar JavaHosts
-
-You should modify the classpath to reflect the directory where InterSystems IRIS(tm) is installed.
-   
+﻿﻿﻿﻿Use or operation of this code is subject to acceptance of the license available in the code repository for this code.This sample can be used with InterSystems IRIS Data Platform (tm) 2019.1 and later. If you have InterSystems IRIS (tm) 2018.1, see the <a href="https://github.com/intersystems/FirstLook-JavaHosts/tree/2018.1.1">2018.1.1 Release</a>.Download this sample to your system. Build the jar files using the instructions in this README.Once you have the jar files, see <a href="http://docs.intersystems.com/iris201811/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_javabusinesshosts">First Look: Connecting Systems in InterSystems IRIS Using Java Business Hosts</a> for instructions on setting up the production for this sample.   To create the jar files, enter the following commands. On UNIX(R) systems, enter the equivalent commands.mkdir JavaHostsOperationOutmkdir JavaHostsServiceOutmkdir Releasesjavac -classpath C:\InterSystems\IRIS\dev\java\lib\JDK18\intersystems-gateway-3.0.0.jar -d JavaHostsOperationOut src\JavaHosts\JavaHostsOperation.javajavac -classpath C:\InterSystems\IRIS\dev\java\lib\JDK18\intersystems-gateway-3.0.0.jar -d JavaHostsServiceOut src\JavaHosts\JavaHostsService.javacd JavaHostsOperationOutjar cf ..\Releases\JavaHostsOperation.jar JavaHostscd ..\JavaHostsServiceOutjar cf ..\Releases\JavaHostsService.jar JavaHostsYou should modify the classpath to reflect the directory where InterSystems IRIS(tm) is installed.   
